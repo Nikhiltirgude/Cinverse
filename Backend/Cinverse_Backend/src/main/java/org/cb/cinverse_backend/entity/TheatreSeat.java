@@ -1,16 +1,14 @@
 package org.cb.cinverse_backend.entity;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 import org.cb.cinverse_backend.enums.SeatType;
 
 @Entity
 @Table(name = "theatre_seats")
 @Getter
 @Setter
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
 public class TheatreSeat {
